@@ -1,0 +1,18 @@
+@use '../abstracts';
+
+// Text Color
+.u-white-text-color{
+    color: abstracts.$white-theme-color;
+}
+.u-link-text-color{
+    color: abstracts.$link-theme-color;
+}
+.u-primary-text-color{
+    color: abstracts.$primary-theme-color;
+}
+.u-secondary-text-color{
+    color: abstracts.$secondary-theme-color;
+}
+.u-gray-text-color{
+    color: abstracts.$gray-theme-color;
+}

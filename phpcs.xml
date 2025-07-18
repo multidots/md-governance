@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset>
+    <arg name="extensions" value="php"/>
+    <exclude-pattern>vendor/</exclude-pattern>
+    <exclude-pattern>assets/build/</exclude-pattern>
+    <exclude-pattern>assets/node_modules/</exclude-pattern>
+    <rule ref="WordPress-VIP-Go"/>
+    <rule ref="WordPressVIPMinimum">
+        <exclude name="WordPressVIPMinimum.Hooks.RestrictedHooks.upload_mimes" />
+        <exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.wp_remote_get_wp_remote_get" />
+    </rule>
+</ruleset>

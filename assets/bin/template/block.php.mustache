@@ -1,0 +1,54 @@
+<?php
+/**
+ * Registers the md-governance/{{slug}} block.
+ *
+ * @global array    $attrs   Block attributes passed to the render callback.
+ * @global string   $content Block content from InnerBlocks passed to the render callback.
+ * @global WP_Block $block   Block registration object.
+ *
+ * @package md-governance
+ */
+
+namespace MD_GOVERNANCE\Blocks;
+
+use MD_GOVERNANCE\Includes\Block_Base;
+use WP_Block;
+
+/**
+ *  Class for the md-governance/{{slug}} block.
+ */
+class {{phpName}} extends Block_Base {
+
+	/**
+	 * Constructor.
+	 */
+	public function __construct() {
+		$this->_block = '{{slug}}';
+		$this->setup_hooks();
+	}
+
+	/**
+	 * To register action/filter.
+	 *
+	 * @return void
+	 */
+	protected function setup_hooks() {}
+
+	/**
+	 * Render block.
+	 *
+	 * @param array    $attributes   Block attributes.
+	 * @param string   $content      Block content.
+	 * @param WP_Block $block        Block object.
+	 * @return string
+	 */
+	public function render_callback(
+		// phpcs:disable VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable
+		array $attributes,
+		string $content,
+		WP_Block $block
+		// phpcs:enable
+	): string {
+		return '{{name}}';
+	}
+}

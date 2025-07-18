@@ -1,0 +1,133 @@
+@use "../abstracts";
+
+/* editor inspector */
+.md-governance-block-sidebar {
+	.setting-row {
+		&:not(:last-child) {
+			margin: 0 0 20px;
+		}
+
+		.components-color-picker__inputs-wrapper {
+			min-width: auto;
+		}
+	}
+
+	.setting-row-wrap {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 -5px;
+		.col-6 {
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			padding: 0 5px;
+			width: 50%;
+		}
+
+		.col-3 {
+			padding: 0 5px;
+			width: 25%;
+		}
+
+		.col-4 {
+			padding: 0 5px;
+			width: 33.333333333333336%;
+		}
+
+		.col-12 {
+			padding: 0 5px;
+			width: 100%;
+		}
+	}
+
+	label {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.components-button {
+		+ .components-button {
+			display: block;
+			margin-top: 1em;
+		}
+	}
+
+	.image-preview {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		div {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.buttons-group {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: 0 -10px;
+		text-align: center;
+		button {
+			margin: 0 6px 10px !important;
+			min-width: 115px;
+		}
+	}
+
+	.block-style-group {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: 0 -10px;
+		text-align: center;
+		button {
+			background-color: transparent;
+			border: 2px solid #eee;
+			box-shadow: none;
+			height: auto;
+			margin: 0 5px 10px !important;
+			outline: none;
+			overflow: hidden;
+			padding: 2px !important;
+			position: relative;
+			width: 45%;
+			&.active {
+				background-color: transparent;
+				border-color: abstracts.$primary-theme-color;
+				&:focus,
+				&:hover {
+					background-color: transparent;
+					border-color: abstracts.$primary-theme-color;
+				}
+
+				label {
+					font-weight: bold;
+				}
+			}
+
+			&:hover {
+				background-color: transparent;
+				border-color: #007cba;
+			}
+
+			div {
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				padding-top: 100%;
+				width: 100%;
+			}
+
+			label {
+				color: abstracts.$primary-theme-color;
+				line-height: 1;
+				margin: 0 0 5px;
+			}
+		}
+	}
+}

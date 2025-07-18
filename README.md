@@ -11,8 +11,7 @@ MD Governance empowers WordPress administrators to control access and settings o
 
 ## Changelog
 1.0.0
-
-Initial release with gutenberg block governance.
+* Initial release with gutenberg block governance.
 
 ## Credits
 MD Governance is developed by Multidots. We appreciate the contributions from the open-source community.
